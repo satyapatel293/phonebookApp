@@ -1,0 +1,26 @@
+### Get All
+GET http://localhost:3001/api/persons
+
+
+### deleting 
+DELETE http://localhost:3001/api/persons/2
+
+
+### posting
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Satya Patel",
+  "number": "551-689-3949"
+}
+
+
+### posting error
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "",
+  "number": "551-689-3949"
+}
